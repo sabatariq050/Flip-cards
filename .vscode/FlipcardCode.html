@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <style>
+    #box
+    {   
+        font-family:'Times New Roman', Times, serif;    
+        margin: 20pt;
+        text-align: center;
+        border:2px solid black;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    h1
+    {   
+        text-align: center;
+        margin: 20pt;
+        border: 2px solid black; 
+        text-shadow:10pt ;
+        font-size: 25pt;
+        background-color: rgb(255, 240, 255);
+        color: rgb(116, 20, 25);
+        border-color: burlywood;
+    }
+    h2{
+        text-decoration: solid black underline;
+    }
+    .card
+    {
+        position:relative;
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        border:2px solid black;
+        
+    }
+    .flipcards
+    {
+    padding:50px;
+   
+    width: 250px;
+    height: 200px;
+    position: relative;
+    margin:auto;
+    }
+    .flipcards:hover .card
+    {
+        transform: rotateY(180deg);
+    }
+    .back,.front
+    {
+        width: 250px;
+        height:200px;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+       
+    }
+    .front{
+        background-color: bisque;
+    }
+    .back{ 
+        transform: rotateY(180deg);
+
+    }
+    .flipcards:nth-child(1) .card .back{
+        background-color: rgb(231, 162, 185);
+    }
+    .flipcards:nth-child(2) .card .back{
+        background-color: rgb(245, 202, 245);
+    }
+    .flipcards:nth-child(3) .card .back{
+        background-color: rgb(226, 126, 226);
+    }
+    .flipcards:nth-child(4) .card .back{
+        background-color: pink;
+    }
+    a{
+
+    }
+    a:hover
+    {
+        font-weight: bold;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <h1>FLIP CARDS</h1>
+    <div id="box">
+    <div class="flipcards">
+        <div class="card">
+            <div class="front">
+                <h2>Card # 1</h2>
+                <h3>Hover to see the content of card</h3>
+                <strong>&#x21bb</strong>
+            </div>
+            <div class="back">
+                <h3>Back side of card# 1 </h3>
+                <a href="https://www.google.com/" alt=GOOGLE>Click to Open Google</a>
+                <br></br>
+                <img src="https://lh3.googleusercontent.com/jUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-" width="50px" height="50px">
+            </div>
+        </div>
+    </div>
+        <div class="flipcards">
+        <div class="card">
+            <div class="front">
+                <h2>Card #2</h2>
+                <h3>Hover to see the content of card</h3>
+                <strong>&#x21bb</strong>
+            </div>
+            <div class="back">
+                <h3>Back side of Card# 2</h3>
+                <a href="https://www.facebook.com/" alt="">Click to open Facebook </a>
+                <br></br>
+                
+            </div>
+        </div>
+    </div>
+        <div class="flipcards">
+        <div class="card">
+            <div class="front">
+                <h2>Card #3</h2>
+                <h3>Hover to see content of card</h3>
+                <strong>&#x21bb</strong>
+            </div>
+            <div class="back">
+                <h3>Back side of Card# 3</h3>
+                <a href="https://www.instagram.com/" alt="">Click to open Instagram</a>
+                </div>
+        </div>
+    </div>
+        <div class="flipcards">
+        <div class="card">
+            <div class="front">
+                <h2>Card #4</h2>
+                <h3>Hover to see the content of card</h3>
+                <strong>&#x21bb</strong>
+            </div>
+            <div class="back">
+                <h3>Back side of Card# 4</h3>
+                <a href="https://twitter.com/login" alt="">Click to open Twitter </a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
